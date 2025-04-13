@@ -1,65 +1,69 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smart Picks Guide</title>
+  <title>متجري الذكي</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f2f6fc;
+      background: linear-gradient(to bottom right, #f3f8ff, #dceeff);
       color: #333;
     }
 
     header {
       background-color: #0057B8;
       color: white;
-      padding: 1rem 2rem;
+      padding: 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    header img {
+      height: 100px;
+      margin-bottom: 1rem;
     }
 
     header h1 {
+      font-size: 2.5rem;
       margin: 0;
-      font-size: 1.8rem;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
     }
 
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 2rem;
-      padding: 2rem;
+      padding: 3rem;
     }
 
     .product-card {
       background: white;
       border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 1rem;
+      border-radius: 16px;
+      padding: 1.5rem;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
     }
 
     .product-card h3 {
       color: #0057B8;
+      font-size: 1.4rem;
     }
 
     .price {
-      color: #333;
+      color: #444;
       font-weight: bold;
+      margin: 0.5rem 0;
     }
 
     .buy-btn {
@@ -82,34 +86,42 @@
       background-color: #0057B8;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1.2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Smart Picks Logo" />
-      <h1>Smart Picks Guide</h1>
-    </div>
+    <img src="logo.png" alt="شعار المتجر">
+    <h1>مرحباً بك في متجري الذكي</h1>
   </header>
 
   <section class="products">
     <div class="product-card">
-      <h3>منتج 1</h3>
-      <p class="price">$20</p>
+      <h3>سماعة بلوتوث</h3>
+      <p class="price">$25</p>
       <button class="buy-btn">اشترِ الآن</button>
     </div>
     <div class="product-card">
-      <h3>منتج 2</h3>
-      <p class="price">$35</p>
+      <h3>ساعة ذكية</h3>
+      <p class="price">$45</p>
+      <button class="buy-btn">اشترِ الآن</button>
+    </div>
+    <div class="product-card">
+      <h3>باور بانك</h3>
+      <p class="price">$30</p>
+      <button class="buy-btn">اشترِ الآن</button>
+    </div>
+    <div class="product-card">
+      <h3>سماعة أذن سلكية</h3>
+      <p class="price">$10</p>
       <button class="buy-btn">اشترِ الآن</button>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Smart Picks Guide. جميع الحقوق محفوظة.
+    &copy; 2025 جميع الحقوق محفوظة لمتجري الذكي.
   </footer>
 
 </body>
